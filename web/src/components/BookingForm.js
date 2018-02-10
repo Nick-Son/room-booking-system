@@ -15,7 +15,7 @@ function BookingForm({ onMakeBooking, user, roomData, date, updateCalendar, onSh
   const handleEndDate = (dateArray) => {
     let recurringEndDate = []
     dateArray.forEach(item => {
-      recurringEndDate.push(parseInt(item))
+      recurringEndDate.push(parseInt(item, 10))
     })
     return recurringEndDate
   }
